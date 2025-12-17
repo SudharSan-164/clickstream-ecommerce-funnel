@@ -1,0 +1,32 @@
+Sessions =
+DISTINCTCOUNT(web_events[session_id])
+
+Users =
+DISTINCTCOUNT(web_events[user_id])
+
+Orders =
+COUNT(orders[order_id])
+
+Conversion Rate % =
+DIVIDE([Orders], [Sessions])
+
+Add to Cart Users =
+CALCULATE(
+    DISTINCTCOUNT(web_events[user_id]),
+    web_events[event_type] = "Add_to_Cart"
+)
+
+Checkout Users =
+CALCULATE(
+    DISTINCTCOUNT(web_events[user_id]),
+    web_events[event_type] = "Checkout_Started"
+)
+
+Cart Abandonment Rate % =
+1 - DIVIDE([Checkout Users], [Add to Cart Users])
+
+Avg Order Value (AOV) =
+AVERAGE(orders[order_value])
+
+CPA =
+DIVIDE(SUM(orders[order_value]), [Orders])

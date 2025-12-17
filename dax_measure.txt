@@ -1,0 +1,6 @@
+Sessions
+Orders
+Conversion Rate %
+Cart Abandonment Rate %
+Avg Order Value (AOV)
+CPA
