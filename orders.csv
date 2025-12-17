@@ -1,0 +1,2 @@
+order_id,user_id,session_id,product_id,order_value,order_date
+O001,U001,S001,P101,15000,2024-01-01

@@ -1,0 +1,8 @@
+event_id,user_id,session_id,event_type,product_id,device_id,event_date,traffic_source
+E001,U001,S001,Homepage,,D1,2024-01-01,Google
+E002,U001,S001,Product_Page,P101,D1,2024-01-01,Google
+E003,U001,S001,Add_to_Cart,P101,D1,2024-01-01,Google
+E004,U001,S001,Checkout_Started,P101,D1,2024-01-01,Google
+E005,U002,S002,Homepage,,D2,2024-01-01,Facebook
+E006,U002,S002,Product_Page,P102,D2,2024-01-01,Facebook
+E007,U002,S002,Add_to_Cart,P102,D2,2024-01-01,Facebook
